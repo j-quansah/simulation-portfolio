@@ -140,11 +140,32 @@
             padding-bottom: 0;
             border-bottom: none;
         }
+        .project-media {
+            margin: 1.2rem 0;
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--gray-border);
+            text-align: center;
+        }
+        .project-media video {
+            width: 100%;
+            max-width: 720px;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+        }
+        .media-caption {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.6rem;
+            margin-bottom: 0;
+        }
         .btn {
             display: inline-block;
             background-color: var(--army-green);
             color: white;
-            padding: 0.5rem 1rem;
+            padding: 0.55rem 1.1rem;
             border-radius: 4px;
             text-decoration: none;
             font-size: 0.9rem;
@@ -187,14 +208,14 @@
 
     <header id="home">
         <h1>Joseph Quansah</h1>
-        <p>Mechanical Engineering Graduate (B.Tech &amp; HND) | M.S. &amp; Ph.D. Prospective Researcher</p>
+        <p>Mechanical Engineer | CFD &amp; FEA Simulation Portfolio</p>
     </header>
 
     <div class="container">
         <!-- BIO SECTION -->
         <section id="bio">
             <h2>Bio</h2>
-            <p>Joseph Quansah is a mechanical engineering graduate from Accra Technical University (B.Tech &amp; HND) with specialized expertise in computational fluid dynamics (CFD) and finite element analysis (FEA). His academic research focuses on thermo-fluid systems, industrial ventilation optimization, and structural-thermal analysis of boiler designs under the supervision of Dr. Peter Nyanor and Mr. Stephen Kudadzie. He is actively seeking M.S. and Ph.D. research assistantship opportunities in mechanical and thermo-fluid engineering.</p>
+            <p>Joseph Quansah is a mechanical engineer with developing experience in computational fluid dynamics (CFD) and finite element analysis (FEA). His previous and ongoing work centers on thermo-fluid systems, industrial ventilation optimization, and structural-thermal analysis of thermal equipment.</p>
             
             <div class="skill-group-title">Core Technical Skills</div>
             <ul class="skills-list">
@@ -206,7 +227,7 @@
             <div class="skill-group-title">Active Learning &amp; Development</div>
             <ul class="skills-list learning">
                 <li>COMSOL Multiphysics (Acoustic Simulation)</li>
-                <li>Python (Foundational Scientific Programming)</li>
+                <li>Python (Scientific Computing)</li>
             </ul>
         </section>
 
@@ -217,17 +238,25 @@
             <!-- Project 1: CFD -->
             <div class="project">
                 <h3>1. Industrial Building Floor Thermal Comfort Analysis Using CFD</h3>
-                <p><strong>B.Tech Thesis Project (Accra Technical University):</strong> Conducted on-site environmental measurements (temperature &amp; humidity) and developed a 3D CFD model in ANSYS Fluent to evaluate indoor airflow patterns, velocity fields, and temperature distributions across single-boiler and double-boiler operating scenarios. Results identified critical thermal hotspots near windows and central zones, guiding optimized ventilation requirements.</p>
+                <p><strong>Research Study:</strong> Investigated indoor environmental conditions and airflow patterns using a 3D CFD model in ANSYS Fluent. Evaluated velocity profiles and temperature distributions across single-boiler and double-boiler configurations to identify thermal hotspots and inform ventilation requirements.</p>
                 
-                <a href="CFD_Analysis.pdf" class="btn" target="_blank">View CFD Thesis Report (PDF)</a>
+                <div class="project-media">
+                    <video controls preload="metadata">
+                        <source src="cfd-airflow.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="media-caption">CFD Airflow Velocity &amp; Thermal Distribution Simulation (ANSYS Fluent)</p>
+                </div>
+
+                <a href="CFD_Analysis.pdf" class="btn" target="_blank">View CFD Report &amp; Data (PDF)</a>
             </div>
 
             <!-- Project 2: FEA -->
             <div class="project">
-                <h3>2. Structural and Thermal Analysis of Two Types of Fire-Tube Boiler Designs</h3>
-                <p><strong>HND Thesis Project (Accra Technical University):</strong> Performed static structural and thermal FEA simulations in SolidWorks on 1023 Carbon Steel and Gray Cast Iron fire-tube boilers comparing <strong>flat-end</strong> vs. <strong>dished-end</strong> plate configurations. The study evaluated von Mises stress distributions, thermal gradients, and displacements under 10 bar internal pressure and 100°C thermal loads, proving that dished-end plates significantly reduce stress concentrations and deflections.</p>
+                <h3>2. Structural and Thermal Analysis of Fire-Tube Boiler Designs</h3>
+                <p><strong>Research Study:</strong> Evaluated the structural and thermal performance of fire-tube boilers under operational loads. Performed static FEA in SolidWorks comparing flat-end and dished-end plate configurations under internal pressure and thermal gradients, quantifying von Mises stress concentrations and deflections.</p>
 
-                <a href="FEA_Analysis.pdf" class="btn" target="_blank">View FEA Thesis Report (PDF)</a>
+                <a href="FEA_Analysis.pdf" class="btn" target="_blank">View FEA Report &amp; Data (PDF)</a>
             </div>
         </section>
 
@@ -240,7 +269,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Joseph Quansah. Academic &amp; Simulation Portfolio.</p>
+        <p>&copy; 2026 Joseph Quansah. Simulation &amp; Engineering Research Portfolio.</p>
     </footer>
 
 </body>
