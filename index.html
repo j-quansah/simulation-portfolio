@@ -240,21 +240,63 @@
             border: 1px solid var(--gray-border);
             font-weight: 500;
         }
-        /* Projects */
-        h3 {
-            color: var(--army-green-dark);
+        /* Modern Project Cards Layout */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        .project-card {
+            background: #ffffff;
+            border: 1px solid var(--gray-border);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+        .project-media-box {
+            background: #0f172a;
+            width: 100%;
+            max-height: 340px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-media-box video {
+            width: 100%;
+            height: auto;
+            max-height: 340px;
+            object-fit: cover;
+            display: block;
+        }
+        .project-content {
+            padding: 1.8rem;
+        }
+        .project-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--army-green);
+            font-weight: 700;
             margin-bottom: 0.4rem;
-            font-size: 1.15rem;
+            display: block;
         }
-        .project {
-            margin-bottom: 2.2rem;
-            padding-bottom: 1.8rem;
-            border-bottom: 1px solid #e5e7eb;
+        .project-card h3 {
+            color: var(--army-green-dark);
+            margin-top: 0;
+            margin-bottom: 0.6rem;
+            font-size: 1.25rem;
         }
-        .project:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
         }
         .btn {
             display: inline-block;
@@ -265,8 +307,6 @@
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
-            margin-top: 0.5rem;
-            margin-right: 0.5rem;
             transition: background-color 0.2s;
         }
         .btn:hover {
@@ -327,7 +367,6 @@
                     <p>My research goal is to apply high-fidelity numerical modeling and multiphysics simulation to improve thermal efficiency and structural reliability in complex engineering systems.</p>
                 </div>
                 <div class="profile-container">
-                    <!-- To show your picture, upload profile.jpg to your repository root -->
                     <img src="profile.jpg" alt="Joseph Quansah" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div class="profile-placeholder" style="display:none;">Upload profile.jpg</div>
                 </div>
@@ -353,24 +392,36 @@
             </div>
         </section>
 
-        <!-- PROJECTS SECTION -->
+        <!-- PROJECTS SECTION (CARD GRID STYLE) -->
         <section id="projects">
-            <h2>Research Projects</h2>
+            <h2>Selected Projects</h2>
             
-            <!-- Project 1: CFD -->
-            <div class="project">
-                <h3>1. Industrial Building Floor Thermal Comfort Analysis (CFD)</h3>
-                <p><strong>Objective &amp; Scope:</strong> Investigated indoor environmental conditions and airflow patterns using a 3D CFD model in ANSYS Fluent. Evaluated velocity profiles and temperature distributions across single-boiler and double-boiler configurations to identify thermal hotspots and inform ventilation requirements.</p>
-                
-                <a href="CFD_Analysis.pdf" class="btn" target="_blank">View CFD Report (PDF)</a>
-            </div>
+            <div class="projects-grid">
+                <!-- Project 1: CFD with Video Box -->
+                <div class="project-card">
+                    <div class="project-media-box">
+                        <video controls preload="metadata">
+                            <source src="cfd-airflow.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Computational Fluid Dynamics (CFD)</span>
+                        <h3>Industrial Building Floor Thermal Comfort Analysis</h3>
+                        <p>Investigated indoor environmental conditions and airflow patterns using a 3D CFD model in ANSYS Fluent. Evaluated velocity profiles and temperature distributions across single-boiler and double-boiler configurations to identify thermal hotspots and inform ventilation requirements.</p>
+                        <a href="CFD_Analysis.pdf" class="btn" target="_blank">View CFD Report (PDF)</a>
+                    </div>
+                </div>
 
-            <!-- Project 2: FEA -->
-            <div class="project">
-                <h3>2. Structural and Thermal Analysis of Fire-Tube Boiler Designs (FEA)</h3>
-                <p><strong>Objective &amp; Scope:</strong> Evaluated the structural and thermal performance of fire-tube boilers under operational loads. Performed static FEA in SolidWorks comparing flat-end and dished-end plate configurations under internal pressure and thermal gradients, quantifying von Mises stress concentrations and deflections.</p>
-
-                <a href="FEA_Analysis.pdf" class="btn" target="_blank">View FEA Report (PDF)</a>
+                <!-- Project 2: FEA Card Style -->
+                <div class="project-card">
+                    <div class="project-content" style="padding-top: 2rem;">
+                        <span class="project-tag">Finite Element Analysis (FEA) &amp; CAD</span>
+                        <h3>Structural and Thermal Analysis of Fire-Tube Boiler Designs</h3>
+                        <p>Evaluated the structural and thermal performance of fire-tube boilers under operational loads. Performed static FEA in SolidWorks comparing flat-end and dished-end plate configurations under internal pressure and thermal gradients, quantifying von Mises stress concentrations and deflections.</p>
+                        <a href="FEA_Analysis.pdf" class="btn" target="_blank">View FEA Report (PDF)</a>
+                    </div>
+                </div>
             </div>
         </section>
 
