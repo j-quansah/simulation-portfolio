@@ -1,31 +1,31 @@
-# Engineering Simulation Portfolio
+# Engineering Simulation & Research Portfolio
 
-Welcome to my professional engineering simulation and research portfolio. This repository hosts advanced computational fluid dynamics (CFD) and finite element analysis (FEA) studies focused on thermo-fluid systems, industrial ventilation optimization, and structural analysis of thermal equipment.
+Welcome! I'm Joseph Quansah, a mechanical engineering researcher specializing in computational fluid dynamics (CFD) and finite element analysis (FEA). This repository serves as a centralized hub for my applied simulation studies, focusing on thermo-fluid systems, industrial ventilation optimization, and the structural-thermal behavior of thermal equipment.
 
-## 🛠️ Core Technical Stack
-* **CFD & Thermal Analysis:** ANSYS Fluent, ANSYS SpaceClaim, ANSYS Meshing
-* **FEA & CAD:** SolidWorks (Simulation, Static/Thermal Studies, 3D Modeling)
-* **Active Development:** COMSOL Multiphysics, Python (Scientific Computing)
+## 🔬 Core Technical Focus
+* **CFD & Fluid Dynamics:** ANSYS Fluent, flow modeling, and multi-regime thermal analysis.
+* **FEA & Solid Mechanics:** SolidWorks simulation, static structural analysis, and thermal stress evaluation.
+* **Continuous Growth:** Expanding computational capabilities in COMSOL Multiphysics and Python.
 
 ---
 
-## 📂 Featured Projects
+## 📁 Featured Research Projects
 
 ### 1. Industrial Building Floor Thermal Comfort Analysis (CFD)
-* **Overview:** Evaluated indoor thermal comfort, airflow patterns, velocity fields, and temperature distributions in industrial spaces using ANSYS Fluent. 
-* **Scope:** Analyzed single-boiler versus double-boiler operating conditions to identify localized thermal hotspots and inform optimized ventilation design.
-* **Reports & Assets:** Detailed methodology and analysis available in [`CFD_Analysis.pdf`](CFD_Analysis.pdf) and simulation visualization via `cfd-airflow.mp4`.
+* **Overview:** An investigation into indoor environmental conditions using an advanced 3D CFD model built in ANSYS Fluent. 
+* **Scope:** Evaluated internal airflow patterns, velocity profiles, and temperature distributions across single-boiler and double-boiler operating scenarios to pinpoint thermal hotspots and inform ventilation design.
+* **Documentation:** Read the full methodology and findings in [`CFD_Analysis.pdf`](CFD_Analysis.pdf) and view flow behavior via `cfd-airflow.mp4`.
 
 ### 2. Structural & Thermal Analysis of Fire-Tube Boiler Designs (FEA)
-* **Overview:** Conducted static structural and thermal finite element analysis on fire-tube boilers using SolidWorks.
-* **Scope:** Compared flat-end versus dished-end plate configurations under 10 bar internal pressure and 100°C thermal loads to quantify von Mises stress concentrations, thermal gradients, and plate deflections.
-* **Reports & Assets:** Full study documentation available in [`FEA_Analysis.pdf`](FEA_Analysis.pdf).
+* **Overview:** A detailed structural and thermal evaluation of fire-tube boilers under heavy operational loads.
+* **Scope:** Conducted static FEA in SolidWorks comparing flat-end versus dished-end plate configurations under 10 bar internal pressure and thermal gradients, quantifying von Mises stress concentrations and plate deflections.
+* **Documentation:** Review the complete study report in [`FEA_Analysis.pdf`](FEA_Analysis.pdf).
 
 ---
 
 ## 🌐 Live Portfolio Website
-Explore the interactive version of this portfolio hosted on GitHub Pages:
+You can explore the fully interactive web version of this portfolio here:
 🔗 [j-quansah.github.io/simulation-portfolio](https://j-quansah.github.io/simulation-portfolio)
 
-## 📬 Contact
+## 📬 Get in Touch
 * **Email:** joseph.kwaku.quansah@gmail.com
