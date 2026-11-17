@@ -1,8 +1,7 @@
-# Engineering Simulation & Research Portfolio
+Engineering Simulation & Research Portfolio
 
 Welcome. I am Joseph Quansah, a mechanical engineer with developing experience in computational fluid dynamics (CFD) and finite element analysis (FEA). My previous work centers on thermo-fluid systems, industrial ventilation optimization, and structural-thermal analysis.
-
-## Technical Expertise
+Technical Expertise
 
 - **Computational Fluid Dynamics:** ANSYS Fluent, flow modeling, thermal distribution analysis.
 - **Finite Element Analysis & CAD:** SolidWorks (Simulation, static structural analysis, thermal stress evaluation).
