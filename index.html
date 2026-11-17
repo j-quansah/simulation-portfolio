@@ -55,7 +55,7 @@
             opacity: 0.8;
             text-decoration: underline;
         }
-        /* Header / Home Section */
+        /* Header */
         header {
             background-color: var(--army-green);
             color: #ffffff;
@@ -72,9 +72,9 @@
             font-size: 1.15rem;
             color: #e5e7eb;
         }
-        /* Main Container */
+        /* Container */
         .container {
-            max-width: 880px;
+            max-width: 920px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
@@ -97,7 +97,7 @@
         h3 {
             color: var(--army-green-dark);
             margin-bottom: 0.4rem;
-            font-size: 1.15rem;
+            font-size: 1.2rem;
         }
         .skill-group-title {
             font-size: 0.9rem;
@@ -131,14 +131,40 @@
             font-weight: 500;
         }
         .project {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.2rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
             border-bottom: 1px solid #e5e7eb;
         }
         .project:last-child {
             margin-bottom: 0;
             padding-bottom: 0;
             border-bottom: none;
+        }
+        .project-media {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .project-media img, .project-media video {
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid var(--gray-border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--army-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+        }
+        .btn:hover {
+            background-color: var(--army-green-dark);
+            color: white;
         }
         .contact-link {
             color: var(--army-green);
@@ -171,42 +197,62 @@
 
     <header id="home">
         <h1>Joseph Quansah</h1>
-        <p>Mechanical Engineering Graduate | M.S. &amp; Ph.D. Prospective Researcher</p>
+        <p>Mechanical Engineering Graduate (B.Tech &amp; HND) | M.S. &amp; Ph.D. Prospective Researcher</p>
     </header>
 
     <div class="container">
+        <!-- BIO SECTION -->
         <section id="bio">
             <h2>Bio</h2>
-            <p>Joseph Quansah is a mechanical engineering graduate from Accra Technical University (B.Tech &amp; HND) with a focused background in computational fluid dynamics (CFD) and finite element analysis (FEA). His academic research includes thesis-level CFD simulations for industrial ventilation optimization and FEA-based thermal-structural analysis of industrial boilers. He is currently expanding his computational toolkit into acoustic multiphysics modeling and foundational scientific programming, and is seeking M.S. and Ph.D. opportunities in thermo-fluid and multiphysics simulation research.</p>
+            <p>Joseph Quansah is a mechanical engineering graduate from Accra Technical University (B.Tech &amp; HND) with specialized expertise in computational fluid dynamics (CFD) and finite element analysis (FEA). His academic research focuses on thermo-fluid systems, industrial ventilation optimization, and structural-thermal analysis of boiler designs under the supervision of Dr. Peter Nyanor and Mr. Stephen Kudadzie. He is actively seeking M.S. and Ph.D. research assistantship opportunities in mechanical and thermo-fluid engineering.</p>
             
-            <div class="skill-group-title">Core Simulation Tools</div>
+            <div class="skill-group-title">Core Technical Skills</div>
             <ul class="skills-list">
                 <li>CFD (ANSYS Fluent)</li>
-                <li>FEA (SolidWorks)</li>
-                <li>3D CAD Modeling (SolidWorks)</li>
+                <li>FEA &amp; 3D CAD (SolidWorks)</li>
+                <li>Thermo-Fluid Systems &amp; Heat Transfer</li>
             </ul>
 
-            <div class="skill-group-title">Currently Learning</div>
+            <div class="skill-group-title">Active Learning &amp; Development</div>
             <ul class="skills-list learning">
                 <li>COMSOL Multiphysics (Acoustic Simulation)</li>
-                <li>Python (Beginner / Foundational Programming)</li>
+                <li>Python (Foundational Scientific Programming)</li>
             </ul>
         </section>
 
+        <!-- PROJECTS SECTION -->
         <section id="projects">
             <h2>Projects</h2>
             
+            <!-- Project 1: CFD -->
             <div class="project">
-                <h3>1. Industrial Ventilation CFD Analysis</h3>
-                <p><strong>B.Tech Thesis Project (Accra Technical University):</strong> Developed steady-state CFD simulations using ANSYS Fluent to evaluate airflow distribution, heat transfer rates, and ventilation effectiveness inside industrial facilities, providing design modifications to improve indoor thermal conditions.</p>
+                <h3>1. Industrial Building Floor Thermal Comfort Analysis Using CFD</h3>
+                <p><strong>B.Tech Thesis Project (Accra Technical University):</strong> Conducted on-site environmental measurements (temperature &amp; humidity) and developed a 3D CFD model in ANSYS Fluent to evaluate indoor airflow patterns, velocity fields, and temperature distributions across single-boiler and double-boiler operating scenarios. Results identified critical thermal hotspots near windows and central zones, guiding optimized ventilation requirements.</p>
+                
+                <!-- CFD Simulation Video -->
+                <div class="project-media">
+                    <video controls muted width="100%">
+                        <source src="cfd-airflow.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p style="font-size: 0.85rem; color: #4b5563; margin-top: 0.4rem;">ANSYS Fluent CFD: Airflow pathlines and thermal distribution from inlet through boilers to outlet.</p>
+                </div>
+
+                <!-- Link to your uploaded presentation or report PDF -->
+                <a href="CFD_Thesis.pdf" class="btn" target="_blank">View CFD Presentation Slides (PDF)</a>
             </div>
 
+            <!-- Project 2: FEA -->
             <div class="project">
-                <h3>2. Boiler Thermal-Structural FEA</h3>
-                <p><strong>HND Thesis Project (Accra Technical University):</strong> Conducted coupled thermal and structural finite element analysis (FEA) in SolidWorks on industrial boiler components under operating thermal loads to identify stress concentrations and evaluate structural integrity.</p>
+                <h3>2. Structural and Thermal Analysis of Two Types of Fire-Tube Boiler Designs</h3>
+                <p><strong>HND Thesis Project (Accra Technical University):</strong> Performed static structural and thermal FEA simulations in SolidWorks on 1023 Carbon Steel and Gray Cast Iron fire-tube boilers comparing **flat-end** vs. **dished-end** plate configurations. The study evaluated von Mises stress distributions, thermal gradients, and displacements under 10 bar internal pressure and 100°C thermal loads, proving that dished-end plates significantly reduce stress concentrations and deflections.</p>
+
+                <!-- Link to your uploaded FEA presentation or report PDF -->
+                <a href="FEA_Analysis.pdf" class="btn" target="_blank">View FEA Presentation Slides (PDF)</a>
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact">
             <h2>Contact</h2>
             <p><strong>Email:</strong> <a class="contact-link" href="mailto:joseph.kwaku.quansah@gmail.com">joseph.kwaku.quansah@gmail.com</a></p>
