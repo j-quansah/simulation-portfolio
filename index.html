@@ -259,19 +259,15 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 12px rgba(0,0,0,0.08);
         }
-        .project-media-box {
-            background: #0f172a;
-            width: 100%;
-            max-height: 340px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .project-media-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            background: #e5e7eb;
         }
-        .project-media-box video {
+        .project-media-grid img {
             width: 100%;
-            height: auto;
-            max-height: 340px;
+            height: 240px;
             object-fit: cover;
             display: block;
         }
@@ -348,7 +344,7 @@
 
     <header id="home">
         <video class="header-video" autoplay loop muted playsinline>
-            <source src="cfd-airflow.mp4" type="video/mp4">
+            <source src="images/cfd-airflow.mp4" type="video/mp4">
         </video>
         <div class="header-overlay"></div>
         <div class="header-content">
@@ -367,7 +363,7 @@
                     <p>My research goal is to apply high-fidelity numerical modeling and multiphysics simulation to improve thermal efficiency and structural reliability in complex engineering systems.</p>
                 </div>
                 <div class="profile-container">
-                    <img src="profile.jpg" alt="Joseph Quansah" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="images/profile.jpg" alt="Joseph Quansah" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div class="profile-placeholder" style="display:none;">Upload profile.jpg</div>
                 </div>
             </div>
@@ -392,18 +388,16 @@
             </div>
         </section>
 
-        <!-- PROJECTS SECTION (CARD GRID STYLE) -->
+        <!-- PROJECTS SECTION -->
         <section id="projects">
             <h2>Selected Projects</h2>
             
             <div class="projects-grid">
-                <!-- Project 1: CFD with Video Box -->
+                <!-- Project 1: CFD Card -->
                 <div class="project-card">
-                    <div class="project-media-box">
-                        <video controls preload="metadata">
-                            <source src="cfd-airflow.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                    <div class="project-media-grid">
+                        <img src="images/cfd-boiler-building.jpg" alt="Industrial Building Boiler Model">
+                        <img src="images/cfd-fluid-volume.jpg" alt="CFD Fluid Volume Domain">
                     </div>
                     <div class="project-content">
                         <span class="project-tag">Computational Fluid Dynamics (CFD)</span>
@@ -413,9 +407,13 @@
                     </div>
                 </div>
 
-                <!-- Project 2: FEA Card Style -->
+                <!-- Project 2: FEA Card -->
                 <div class="project-card">
-                    <div class="project-content" style="padding-top: 2rem;">
+                    <div class="project-media-grid">
+                        <img src="images/fea-flat-end-thermal.jpg" alt="Flat-End Boiler Thermal Contour">
+                        <img src="images/fea-dished-end-thermal.jpg" alt="Dished-End Boiler Thermal Contour">
+                    </div>
+                    <div class="project-content">
                         <span class="project-tag">Finite Element Analysis (FEA) &amp; CAD</span>
                         <h3>Structural and Thermal Analysis of Fire-Tube Boiler Designs</h3>
                         <p>Evaluated the structural and thermal performance of fire-tube boilers under operational loads. Performed static FEA in SolidWorks comparing flat-end and dished-end plate configurations under internal pressure and thermal gradients, quantifying von Mises stress concentrations and deflections.</p>
